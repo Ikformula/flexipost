@@ -11270,7 +11270,7 @@ header,
 
 .about-content {
   float: left;
-  width: 70%;
+  width: 100%;
   margin-left: 22%;
   margin-top: 70px; }
 
@@ -11513,7 +11513,7 @@ header,
     .blog-post-page .blog-post {
       width: calc(100% - 80px); } }
   .blog-post-page .blog-post .title {
-    font-size: 50px;
+    font-size: 30px;
     font-family: "Playfair Display", sans-serif;
     font-weight: 700;
     color: #333;
@@ -12609,8 +12609,8 @@ header,
     margin-left: 99px; }
 
 #preloaderDK .preloaderDK__textblock .preloaderDK__textblock__logo {
-  width: 40px;
-  height: 40px; }
+  width: 120px;
+  height: 30px; }
 
 #preloaderDK .preloaderDK__textblock .preloaderDK__textblock__text {
   font-family: "Playfair Display", sans-serif;
