@@ -1,0 +1,142 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        Calentim - Date Time Range Picker
+    </title>
+    <link href="includes/bootstrap.min.css" rel="stylesheet" />
+    <link href="includes/prism.css" rel="stylesheet" />
+    <link href="includes/toc.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<scr' + 'ipt src="../js/jquery-2.1.4.min.js" type="text/javascript"><\/scr' + 'ipt>')
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="includes/prism.js" type="text/javascript"></script>
+    <script src="includes/toc.min.js" type="text/javascript"></script>
+    <!-- calentim includes -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet" />
+    <link href="../build/css/calentim.min.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../build/js/moment.min.js"></script>
+    <script src="../build/js/calentim.obf.js"></script>
+    <!-- end calentim includes -->
+</head>
+<body>
+    <div class="all-container">
+        <nav class="navbar navbar-default navbar-fixed-top isontop">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                    <a class="navbar-brand" href="#"><i class='fa fa-calendar'></i>&nbsp;Calentim</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#features">Features</a></li>
+                        <li><a href="#how-to-use-it">How to use</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#configuration">Configuration</a></li>
+                        <li><a href="#available-events">Events</a></li>
+                        <li><a href="#methods">Methods</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </nav>
+        <div class="jumbotron">
+            <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h1>You can customize and control everything.</h1>
+                    <p><b>Calentim</b> is a Date/Time Range Picker plugin, built using jQuery and moment.js libraries. You can use it as a date time range picker, as a date picker, or as a time picker. You can show it inline, or use as a dropdown for any element.</p>
+                </div>
+                <div class='col-md-6 example-container'>
+                    <input type="text" id="calentim-header" />
+                    <script type="text/javascript">$("#calentim-header").calentim({inline: true});</script>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="visible-md visible-lg hidden-sm toc-container" id="scrollspy"></div>
+                <div class="col-md-9 col-sm-12 col-md-offset-3 contents" id="contents">
+                    <%=content%>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid text-center">Taha Paksu © 2017, All Rights Reserved</footer>
+        <button class="scroll-to-top"><i class="fa fa-arrow-up"></i></button>
+    </div>
+    <script type="text/javascript">
+        if ((window.innerWidth <= 800 && window.innerHeight <= 600) || (window.innerWidth <= 600 && window.innerHeight <= 800)) {
+            $("img").addClass("img-responsive");
+        } else {
+            tocbot.init({
+                tocSelector: '#scrollspy',
+                contentSelector: '#contents',
+                headingSelector: 'h2',
+                collapseDepth: 0,
+                fixedSidebarOffset: $(".navbar").outerHeight() + $(".all-container .jumbotron").outerHeight() - 90,
+                positionFixedClass: "affix",
+                positionFixedSelector: "#scrollspy",
+            });
+        }
+
+        $(".doc-feature").wrapInner("<div class='doc-feature-box'></div>");
+
+        $("h2:first").addClass("first-header");
+        $('body').scrollspy({
+            target: '.navbar',
+            offset: 50
+        });
+        $(window).on("scroll", function(){
+            if($(window).scrollTop() < 50){
+                $(".navbar-default").addClass("isontop");
+                $(".scroll-to-top").addClass("hidden");
+            }else{
+                $(".navbar-default").removeClass("isontop");
+                $(".scroll-to-top").removeClass("hidden");
+            }
+        }).ready(function(){
+            $(this).trigger("scroll");
+        });
+        window.addEventListener('scroll', function (event) {
+            $(".jumbotron").css("background-position", "0 " + ($(window).scrollTop() / 2) + "px");
+        }, true);
+
+        var navMain = $(".navbar-collapse"); // avoid dependency on #id
+        // "a:not([data-toggle])" - to avoid issues caused
+        // when you have dropdown inside navbar
+        navMain.on("click", "a:not([data-toggle])", null, function () {
+            navMain.collapse('hide');
+        });
+
+        $("#examples").nextUntil("h2").wrapAll("<div id='examples-container'></div>");
+        $("#examples-container").find("h3[id]").each(function(){
+            $("#examples-toc").append("<a href='#"+$(this).attr("id")+"'>"+$(this).text()+"</a>");
+        });
+
+        $(".scroll-to-top").click(function(){
+            $("html, body").animate({
+                scrollTop: 0,
+
+            }, "slow", "swing");
+        })
+
+
+    </script>
+</body>
+
+</html>

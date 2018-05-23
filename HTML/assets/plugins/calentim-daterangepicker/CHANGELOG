@@ -1,0 +1,37 @@
+v1.0.0
+	- Released initial version.
+
+v1.0.1
+	- fixed minute step overflow error on last step range
+	- fixed ineffective initial value on `startEmpty: true` setting
+	- fixed parameterless hideDropdown call bug in firefox
+	- fixed multiple instance closing issues
+	- added option to remove time picker
+	- added infinite scroll on timepickers
+
+v1.0.2
+	- fixed target element confusion when different target option is specified
+	- added `showCalendars` option to disable date selection (only time picker)
+
+v1.1.0
+   - fixed an issue about time pickers setting the wrong value on first click
+   - fixed autoCloseOnSelect on singleDate version / mobile views
+   - changed code to make clicking on disabled days select start/end date
+   - added some transition delays to make it smoother
+   - added keyboard navigation (`enableKeyboard` option)
+        - up: previous week
+        - down: next week
+        - left: previous day
+        - right: next day
+        - space: select day
+        - pageup: previous month
+        - pagedown next month
+        - shift + pageup: previous year
+        - shift + pagedown: next year
+   - added easy year switch buttons on year list
+   - fixed startEmpty cell selected classes
+   - added destroy method and some extra tests
+   - fix custom target element reading in fetchInputs method
+
+v1.1.1
+   - fixed the month change problem which is caused by a reset when validating dates.

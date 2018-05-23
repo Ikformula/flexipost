@@ -1,0 +1,347 @@
+/**
+ * Mobile styles
+ */
+
+.calentim-container-mobile {
+    .calentim-input {
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 9999;
+        margin: 6px;
+        border-radius: 6px;
+        box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+        border: 1px solid $calentim-border-color;
+        display: flex;
+        display: -ms-flexbox;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: center;
+        overflow-y: auto;
+        @media screen and (orientation: landscape) {
+            top: 0;
+            overflow-y: scroll;
+            flex-wrap: wrap;
+        }
+        &.calentim-input-top-reset {
+            top: 0;
+        }
+        .calentim-header {
+            box-sizing: border-box;
+            padding: 12px;
+            order: 0;
+            display: flex;
+            display: -ms-flexbox;
+            flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            flex-flow: nowrap;
+            background: $calentim-mobile-background;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1em;
+            @media screen and (orientation: landscape) {
+                width: 50%;
+                float: right;
+                order: 2;
+                padding: 6px 8px 7px 8px;
+                border-left: 1px solid #ddd;
+                font-size: .857em;
+            }
+            .calentim-header-separator {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                display: -ms-flexbox;
+                color: lightsteelblue;
+                margin-top: 2px;
+                @media screen and (orientation: landscape) {
+                    flex: 1 0 auto;
+                    -ms-flex: 1 0 auto;
+                }
+            }
+            .calentim-header-start, .calentim-header-end {
+                @media screen and (orientation: landscape) {
+                    width: 50%;
+                    min-width: 0;
+                    padding: 0 0px;
+                }
+                margin: 0;
+                .calentim-header-start-day, .calentim-header-end-day {
+                    font-size: 2.8em;
+                    margin: -10px;
+                    font-weight: 400;
+                }
+                .calentim-header-start-date, .calentim-header-end-date {
+                    font-size: 1em;
+                    color: #424242;
+                    font-weight: 500;
+                }
+                .calentim-header-start-weekday, .calentim-header-end-weekday {
+                    font-size: 0.8em;
+                    color: #424242;
+                    font-weight: 400;
+                    line-height: 10px;
+                }
+            }
+            .calentim-header-start {
+                .calentim-header-start-day {
+                    margin-right: 8px;
+                    margin-left: 0;
+                    float: left;
+                }
+            }
+            .calentim-header-end {
+                text-align: right;
+                .calentim-header-end-day {
+                    float: right;
+                    margin-left: 8px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .calentim-calendars {
+            order: 2;
+            flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            background: white;
+            display: flex;
+            display: -ms-flexbox;
+            flex-direction: column;
+            overflow: scroll;
+            @media screen and (orientation: landscape) {
+                width: 50%;
+                order: 0;
+            }
+            .calentim-month-selector, .calentim-year-selector {
+                border-bottom: $calentim-border;
+                .calentim-ms-month {
+                    flex: 1 1 33.33%;
+                    -ms-flex: 1 1 33.33%;
+                    height: 25%;
+                }
+                .calentim-ys-year {
+                    flex: 1 1 20%;
+                    -ms-flex: 1 1 20%;
+                    height: 33.33%;
+                }
+            }
+            .calentim-calendar {
+                border-right: none;
+                display: block;
+                @media screen and (orientation: landscape) {
+                    border: none;
+                }
+                &:first-child {
+                    .calentim-title {
+                        border-top: none;
+                    }
+                }
+                .calentim-title {
+                    background: $calentim-mobile-background;
+                    align-items: center;
+                    font-size: 1.25em;
+                    justify-content: space-between;
+                    display: flex;
+                    display: -ms-flexbox;
+                    border-top: $calentim-border;
+                    color: #424242;
+                    @media screen and (orientation: landscape) {
+                        box-sizing: border-box;
+                        padding: 8px;
+                    }
+                }
+                .calentim-days-container {
+                    padding: 10px 4px;
+                    .calentim-dayofweek, .calentim-day, .calentim-disabled {
+                        min-height: calc((100% - 48px) / 8);
+                        @media screen and (orientation: landscape) {}
+                        font-size: 0.8572em;
+                        position: relative;
+                        justify-content: center;
+                        align-items: stretch;
+                        display: flex;
+                        display: -ms-flexbox;
+                        span {
+                            flex: 1;
+                            -ms-flex: 1;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            display: -ms-flexbox;
+                        }
+                    }
+                }
+            }
+        }
+        .calentim-ranges {
+            background: white;
+            order: 2;
+            flex: 1 0 auto;
+            -ms-flex: 1 0 auto;
+            align-items: flex-end;
+            margin: 0px;
+            padding: 4px;
+            border: none;
+            text-align: center;
+            @media screen and (orientation: landscape) {
+                width: 50%;
+                box-sizing: border-box;
+                flex: 1 1 0;
+                -ms-flex: 1 1 0;
+                border-left: 1px solid #ddd;
+                overflow-y: scroll;
+                min-height: 50px;
+            }
+            i {
+                font-size: 20px;
+                display: none;
+            }
+            .calentim-range-header {
+                font-size: 0.9em;
+                display: none;
+            }
+            .calentim-range {
+                font-size: 0.85em;
+                padding: 4px 8px;
+                background: $calentim-first-last;
+                font-weight: 400;
+                color: white;
+                border-radius: 21px;
+                @media screen and (orientation: landscape) {
+                    border-radius: 6px;
+                    display: block;
+                    margin: 4px;
+                }
+            }
+        }
+        .calentim-filler {
+            display: none;
+            @media screen and (orientation: landscape) {
+                display: block;
+                box-sizing: border-box;
+                flex-grow: 1;
+                margin-bottom: auto;
+                border-left: 1px solid $calentim-border-color;
+                min-height: 100px;
+                order: 3;
+            }
+        }
+        .calentim-ranges+.calentim-filler {
+            display: none;
+        }
+        .calentim-footer {
+            order: 3;
+            flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            text-align: center;
+            padding: 6px 6px 7px 6px;
+            background: $calentim-mobile-background;
+            border-top: 1px solid $calentim-border-color;
+            @media screen and (orientation: landscape) {
+                width: 50%;
+                box-sizing: border-box;
+                border-left: 1px solid #ddd;
+                margin-top: auto;
+            }
+            button {
+                font-size: 15px;
+                font-family: $calentim-font-family;
+                padding: 4px;
+                font-weight: 400;
+                outline: none;
+                border: none;
+                border-radius: 4px;
+                width: calc((100% - 10px)/2);
+                &.calentim-apply {
+                    background: $calentim-mobile-buttons;
+                    color: white;
+                    margin-left: 7px;
+                    font-weight: 500;
+                    border: 1px solid $calentim-mobile-buttons;
+                    &[disabled=disabled], &:disabled {
+                        background: $calentim-header-sub;
+                        color: $calentim-header;
+                        border: 1px solid $calentim-header;
+                    }
+                }
+                &.calentim-cancel {
+                    background: transparent;
+                    color: $calentim-mobile-buttons;
+                    border: 1px solid $calentim-mobile-buttons;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .calentim-timepickers {
+            order: 2;
+            flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+            background: ghostwhite;
+            font-size: 1em;
+            border-top: $calentim-border;
+            border-bottom: $calentim-border;
+            @media screen and (orientation: landscape) {
+                border-top: none;
+                border-bottom: $calentim-border;
+                border-left: $calentim-border;
+                font-size: 1.125em;
+                order: 2;
+            }
+            .calentim-timepicker {
+                .calentim-timepicker-ampm-am, .calentim-timepicker-ampm-pm {}
+                .calentim-hour-minute-seperator {
+                    margin-top: 0px;
+                    color: $calentim-month-name;
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    @media screen and (orientation: landscape) {
+                        margin-top: 0px;
+                        font-size: 1.4em;
+                    }
+                }
+                .calentim-timepicker-hours-wrapper {
+                    .calentim-timepicker-hours {
+                        font-size: 21px;
+                        border: 1px solid $calentim-border-color;
+                        border-radius: 3px;
+                        /*background: linear-gradient(to bottom, #e8e8ef 0%, #fff 45%, #d8d8df 100%);
+                        box-shadow: inset 0 2px 10px 1px #424242;*/
+                        .calentim-hour-selected {
+                            background: whitesmoke;
+                            border-radius: 2px;
+                            box-shadow: none;
+                            border: $calentim-border;
+                            margin: 0 2px;
+                        }
+                        .calentim-hour-selected-prev, .calentim-hour-selected-next {}
+                    }
+                }
+                .calentim-timepicker-minutes-wrapper {
+                    .calentim-timepicker-minutes {
+                        font-size: 21px;
+                        border: 1px solid $calentim-border-color;
+                        border-radius: 3px;
+                        /*box-shadow: inset 0 2px 10px 1px #424242;
+                        background: linear-gradient(to bottom, #e8e8ef 0%, #fff 45%, #d8d8df 100% );*/
+                        .calentim-minute-selected {
+                            background: whitesmoke;
+                            border-radius: 2px;
+                            box-shadow: none;
+                            border: $calentim-border;
+                            margin: 0 2px;
+                        }
+                        .calentim-minute-selected-prev, .calentim-minute-selected-next {}
+                    }
+                }
+                .calentim-timepicker-hour-arrows, .calentim-timepicker-minute-arrows {
+                    display: none;
+                }
+            }
+        }
+    }
+}
