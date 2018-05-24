@@ -1,0 +1,14 @@
+{
+    "name": "mighty-dev/presichoice",
+    "description": "UI for presichoice",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Ikformula",
+            "email": "ik4mula@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
+
