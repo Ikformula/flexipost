@@ -6,4 +6,7 @@
  * Time: 12:43 PM
  */
 
-include_once ("HTML/index.html");
+?>
+<script>
+    location.href = "HTML/index.html";
+</script>
