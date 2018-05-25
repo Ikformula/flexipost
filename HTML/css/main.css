@@ -16261,6 +16261,204 @@ body.theme-color-green .modal .modal-content h2 {
 body.theme-color-green .modal .modal-content .btn {
   background-color: #038387 !important; }
 
+
+/*-------------------------------
+  Color schemes/nigeria-green
+-------------------------------*/
+body.theme-color-nigeria-green .main-wrapper header .top-bar .logotype .text {
+  color: ##01A962; }
+
+body.theme-color-nigeria-green .main-wrapper header .nav a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper header .nav .dropdown-menu a:before {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper .sidebar.style1 .profile .colored {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper .sidebar.style1 .profile .subscribe {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper .sidebar.style1 .copyright a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper .sidebar.style2 .copyright a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper .sidebar.style3 {
+  background-color: #01A962; }
+body.theme-color-nigeria-green .main-wrapper .sidebar.style3 .content {
+  border-right-color: #05e4eb; }
+body.theme-color-nigeria-green .main-wrapper .sidebar.style3 .content .copyright a {
+  color: #fff; }
+
+body.theme-color-nigeria-green .main-wrapper main .slider .item .author-title .title {
+  color: #04b3b9 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .slider .item .intro .read-post {
+  background-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .slider .item .content .category span {
+  background-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .slider.multipost .owl-nav > div {
+  background-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .main-video .text .title:before, body.theme-color-nigeria-green .main-wrapper main .main-video .text .title:after {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .main-title .result {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .sort-bar .sort i.fa {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .sort-bar ul.dropdown-menu li.active a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .sort-bar ul.dropdown-menu li a:before {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .sort-bar ul.dropdown-menu li a:hover {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .post .post-wrapper:before {
+  background-image: url("../images/icons/pin-green.svg"); }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .post .rating .line .title {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .post .more a {
+  color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .post.post-rating .image:before {
+  background-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .post.post-rating .more-btn a {
+  color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .about-content .user .name {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .about-content .buttons .subscribe {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .contact-block .title {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .contact-block form button {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .list-view .list-item.sticky-post:before {
+  background-image: url("../images/icons/pin-green.svg"); }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .list-view .list-item .read-more {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .news-container .profile-content-block .btn.save {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .categories-block .categories-list li span.count {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .categories-block .categories-list li.show-new a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .menu li:before {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .cat-item:before {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .comment .author-link {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .comment .comment-excerpt {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .open-all-list-block a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .tag-cloud-link:hover {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar table a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .widgets-sidebar .textwidget ul li:before {
+  background: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .faq-main-block .faq-list-wrapper .faq-title {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .faq-main-block .faq-block .faq-block-title {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .faq-main-block .faq-block .faq-block-likes .button {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .lines-divider .line {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .compare-images .square {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .compare-list .item .point i {
+  border-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .compare-list .item .point.total {
+  background-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .rating-list .image:before {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .rating-list .list-item .item .name strong, body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .rating-list .list-item .item .name a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .movie-item h4 {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .movie-item .images-slider .owl-carousel:before {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .content .movie-item .bottom .links .btn {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .posted a {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .socials .text {
+  color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .comments-block .avatar {
+  border-color: #01A962; }
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .comments-block .avatar:after {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper main .blog-post-page .blog-post .comments-block .submit button {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green .main-wrapper footer.footer .btn {
+  background-color: #01A962; }
+
+body.theme-color-nigeria-green #preloader .preloaderDK__textblock__text {
+  color: #01A962 !important; }
+
+body.theme-color-nigeria-green #preloader .preloaderDK__progress__line {
+  background-color: #01A962 !important; }
+
+body.theme-color-nigeria-green .modal .modal-content h2 {
+  color: #01A962 !important; }
+
+body.theme-color-nigeria-green .modal .modal-content .btn {
+  background-color: #01A962 !important; }
+
+
+
 /*-------------------------------
   Color schemes/red
 -------------------------------*/
